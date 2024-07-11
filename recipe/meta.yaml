@@ -1,5 +1,5 @@
 {% set name = "pyopensky" %}
-{% set version = "2.7" %}
+{% set version = "2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyopensky-{{ version }}.tar.gz
-  sha256: 4ecdf77a009205dd707db00bcbbed346979e398558bb77c57da8543efbc8f8e7
+  sha256: 828cdc50f6fe409dba50e4099a7e6f3c6362e121cc8fdeed45ae59c617a94a02
 
 build:
   noarch: python
