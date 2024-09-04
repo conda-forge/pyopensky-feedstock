@@ -16,21 +16,21 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.0
-    - poetry-core
+    - python >=3.9,<4.0
+    - hatchling
     - pip
   run:
-    - python >=3.8.0,<4.0.0
-    - pandas >=1.5
-    - trino-python-client >=0.322
-    - minio >=7.1
+    - python >=3.9.0,<4.0.0
+    - pandas >=2.2.2
+    - trino-python-client >=0.329
+    - minio >=7.2.8
     - appdirs >=1.4.4
-    - tqdm >=4.65.0
-    - pyarrow >=11.0.0
-    - typing-extensions >=4.5.0
-    - pyjwt >=2.7.0
+    - tqdm >=4.66.5
+    - pyarrow >=17.0.0
+    - typing-extensions >=4.12.2
+    - pyjwt >=2.9.0
     - sqlalchemy >=1.3
-    - httpx >=0.27.0
+    - httpx >=0.27.2
 
 test:
   imports:
