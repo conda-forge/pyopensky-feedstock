@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyopensky-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyopensky-{{ version }}.tar.gz
   sha256: 82a18a6b4a451e9b05104f8a852354e20fefb7025d32c4248f761d918015b877
 
 build:
