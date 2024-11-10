@@ -1,5 +1,6 @@
 {% set name = "pyopensky" %}
 {% set version = "2.12" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
