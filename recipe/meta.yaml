@@ -1,5 +1,6 @@
 {% set name = "pyopensky" %}
-{% set version = "2.11" %}
+{% set version = "2.12" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyopensky-{{ version }}.tar.gz
-  sha256: 82a18a6b4a451e9b05104f8a852354e20fefb7025d32c4248f761d918015b877
+  sha256: ced9532dc387abdd1920d3af1df76b1fd83525f2ec042c2064f1f42533a04d4b
 
 build:
   noarch: python
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<4.0
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.9.0,<4.0.0
+    - python >={{ python_min }}
     - pandas >=2.2.2
     - trino-python-client >=0.329
     - minio >=7.2.8
@@ -38,6 +39,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
