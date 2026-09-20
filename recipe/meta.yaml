@@ -1,10 +1,10 @@
 {% set name = "pyopensky" %}
 {% set version = "2.17" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyopensky-{{ version }}.tar.gz
