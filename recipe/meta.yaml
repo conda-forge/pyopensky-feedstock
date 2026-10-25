@@ -1,5 +1,5 @@
 {% set name = "pyopensky" %}
-{% set version = "2.17" %}
+{% set version = "2.18" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyopensky-{{ version }}.tar.gz
-  sha256: c54b141436775e7053056c1f56203ac597ccdec30b061c55bf5914bcbf7c21f4
+  sha256: 5cd8aec9b2d71c7dacc25ae47c86821acd84d2c893f01d9e2c8d3248bced466b
 
 build:
   noarch: python
